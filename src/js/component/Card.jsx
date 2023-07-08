@@ -1,12 +1,24 @@
 import React from "react";
 import '../../styles/Card.css'
+import Home from "./Home";
+import { checkPropTypes } from "prop-types";
+import  PropTypes  from "prop-types";
 
-const Card = (promp) => {
+
+function Card(props){
     return(
-        <div className={promp.classType}>
-            <h1>{promp.content}</h1>
+        <div className={props.classType}>
+            <h1>{props.content}</h1>
         </div>
     );
 }
+
+Card.propTypes= {
+    classType : PropTypes.string,
+    content : PropTypes.number,
+};
+
+
+
 
 export default Card;
