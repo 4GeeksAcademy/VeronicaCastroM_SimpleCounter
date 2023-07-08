@@ -1,0 +1,14 @@
+.counter-container{
+    width: 100%;
+    display: inline-flex;
+    background-color: #c81912;
+    justify-content: center;
+    padding:10px;
+    column-gap: 2%;
+    border: solid black 5px;
+}
+
+.main-container{
+    padding: 10px;
+}
+
